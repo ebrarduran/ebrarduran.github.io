@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width:1170px)" href="tablet.css">
+    <link rel="stylesheet" media="screen and (max-width:900px)" href="phone.css">
+    <link rel="stylesheet" media="screen and (max-width:695px)" href="phone1.css">
+
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Ana Sayfa</a></li>
+            <li><a href="#portfolio">Portfolyo</a></li>
+            <li><a href="#education">Eğitim</a></li>
+            <li><a href="#about">Hakkımda</a></li>
+            <li><a href="#contact">İletişime Geç</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1 class="heading">Merhaba,</h1>
+        <h1 class="heading">Ben Ebrar</h1>
+       
+        <br><br>
+        
+    </section>
+
+    <section id="portfolio">
+        <h1 class="heading">Portfolyo</h1>
+        <div class="gallery">
+            <img src="Photos/korea.jpg" alt="">
+            <img src="Photos/tipograficalismasi.jpg" alt="">
+            <img src="Photos/pictovetica.gif" alt="">
+
+        </div>
+    </section>
+
+    <section id="education">
+        <h1 class="heading">Eğitim</h1>
+        <div class="columns">
+            <div class="box">
+                <h2>İstanbul Medipol Üniversitesi </h2>
+                <p>Görsel İletişim Tasarımı Bölümünde 3. sınıftayım</p>
+            </div>
+            <div class="box">
+                <h2>Ayrıca freelancer olarak çalışıyorum.</h2>
+            </div>
+        </div>
+        <br><br>
+    </section>
+
+    <section id="about">
+        <h1 class="heading">Hakkımda</h1>
+        <div class="about">
+            <img src="ebrar.jpg" alt="ilkfoto">
+            <div class="name">
+               
+             <h2>Ben Ebrar Betül Duran </h2>
+            <br>
+                <p>14 Eylül 2001'de İstanbul'da doğdum. Kartal Sabiha Gökçen Meslek Lisesi Radyo Televizyon bölümü mezunuyum. Lisede gördüğüm eğitim sonrasında benzer bir bölümden devam etme kararı alarak Medipol Üniversitesi Görsel İletişim Tasarımı bölümünü seçtim. Lisede aldığım animasyon ve sinema dersleri, ileride ne yapmak istediğimi bulmama yardımcı oldu. Mezun olduktan sonra yapacağım işin de bu alanlarda olmasını hedefliyorum.</p>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1 class="heading">İletişime Geç</h1>
+        <form action="" class="form">
+            <input type="text" name="name" class="input" placeholder="İsim-Soyisim">
+            <input type="email" name="email" class="input" placeholder="E-posta">
+            <textarea name="message" id="message" cols="70" rows="20" placeholder="Mesaj giriniz.."></textarea>
+            <input type="submit" value="Mesajı Gönder" id="submit">
+        </form>
+    </section>
+</body>
+</html>

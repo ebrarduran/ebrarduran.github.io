@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* navbar */
+.navbar{
+    display: flex;
+    justify-content: center;
+    height: 65px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+.navbar::before{
+    content: "";
+    position: absolute;
+    background-color: rgba(150, 171, 120, 0.5);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+}
+.navbar ul li{
+    font-size: 1.1rem;
+     font-family: Montserrat, sans-serif;
+}
+.navbar ul li a{
+    padding: 5px 20px;
+    text-decoration: none;
+    color: white;
+}
+.navbar ul li a:hover{
+    color: #2C4231;
+    border-bottom: 2px solid #2C4231;
+}
+
+/* Anasayfa */
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 650px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url('ebrar1.jpg') no-repeat;
+    background-size: cover;
+    background-position: bottom bottom;
+    height: 720px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+.heading{
+    color: white;
+    font-size: 5rem;
+    font-family: Montserrat, sans-serif;
+    text-align: center;
+    transform: scale(1,1);
+}
+
+/* Portfolyo */
+#portfolio{
+    display: flex;
+    flex-direction: column;
+    background-color: #2C4231;
+}
+#portfolio h1{
+    margin: 60px;
+}
+.gallery{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.gallery img{
+    width: 450px;
+    height: auto;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 7px;
+    overflow: hidden;
+}
+.gallery img:hover{
+    background-color: #617754;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+/* Egitim */
+#education{
+    display: flex;
+    flex-direction: column;
+    background-color: #2c4231;
+}
+#education h1{
+    margin: 60px;
+}
+.columns{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-left: 50px;
+}
+.box{
+    height: auto;
+    width: 600px;
+    background-color: #617754;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+}
+.box h2{
+    color: #2c4231;
+    text-align: center;
+    font-size: 1.5rem;
+     font-family: Montserrat, sans-serif;
+    margin-bottom: 0px;
+}
+.box p{
+    color: #2c4231;
+     text-align: center;
+    font-size: 1.1rem;
+     font-family: Montserrat, sans-serif;
+}
+
+/* Hakkimda */
+#about{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    height: 100%;
+}
+#about h1{
+    color: #2c4231;
+    margin: 55px;
+}
+.about{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.about img{
+    width: 518px;
+    height: 345px;
+    padding: 0px;
+    border-radius: 12px;
+    border: 10px solid #2c4231;
+    margin-right: 25px;
+}
+.name{
+    padding: 50px;
+}
+.name h2{
+    font-size: 2rem;
+     font-family: Montserrat, sans-serif;
+        color: #2c4231;
+}
+.name p{
+    font-size: 1.2rem;
+     font-family: Montserrat, sans-serif;
+        color: #2c4231;
+}
+
+/* İletisim */
+#contact{
+    display: flex;
+    flex-direction: column;
+    background-color: #2c4231;
+}
+#contact h1{
+    margin: 50px ;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.input{
+    padding: 15px 20px;
+    margin: 15px;
+    width: 40%;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+#message{
+    margin: 15px;
+    padding: 10px;
+    border-radius: 10px;
+}
+#submit{
+    padding: 15px 20px;
+    margin: 30px;
+    width: 15%;
+    border-radius: 10px;
+    background-color: #558a61;
+    color: #2c4231;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    font-size: 16px;
+     font-family: Montserrat, sans-serif;
+}
+#submit:hover{
+    background-color: white;
+    color: darkolivegreen;
+    cursor: pointer;
+}
